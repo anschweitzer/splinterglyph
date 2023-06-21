@@ -16,8 +16,8 @@ This repo is designed to solve the preceding sort of problems.  Because the user
 ## Installation
 Assuming you have already installed `pip`:
 ```
-python3.10 -m pip install --user virtualenv
-python3.10 -m venv venv
+python3 -m pip install --user virtualenv
+python3 -m venv venv
 source venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
