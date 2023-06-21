@@ -4,7 +4,7 @@
 # decrypt the file
 
 import os
-import splinterglyph_tools as splinterglyph
+import splinterglyph.splinterglyph_tools as splinterglyph
 import argparse
 
 if __name__ == "__main__":

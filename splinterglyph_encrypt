@@ -2,7 +2,7 @@
 
 # Encrypt a file and produce shares of a distributed secret key
 
-import splinterglyph_tools as splinterglyph
+import splinterglyph.splinterglyph_tools as splinterglyph
 import argparse
 
 if __name__ == "__main__":
