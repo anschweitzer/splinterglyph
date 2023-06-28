@@ -35,7 +35,7 @@ def select_prime_larger_than(value):
         raise TypeError("value must be an int")
     mersenne_primes = list(
         map(
-            lambda x: 2 ** x - 1,
+            lambda x: 2**x - 1,
             [
                 17,
                 19,
@@ -69,19 +69,19 @@ def select_prime_larger_than(value):
     )
     extra_primes = [
         # smallest (n+1)-bit primes, where n is a power of two
-        2 ** 128 + 51,
-        2 ** 192 + 133,
-        2 ** 256 + 297,
-        2 ** 320 + 27,
-        2 ** 384 + 231,
-        2 ** 448 + 211,
-        2 ** 512 + 75,
-        2 ** 768 + 183,
-        2 ** 1024 + 643,
-        2 ** 1536 + 75,
-        2 ** 2048 + 981,
-        2 ** 3072 + 813,
-        2 ** 4096 + 1761,
+        2**128 + 51,
+        2**192 + 133,
+        2**256 + 297,
+        2**320 + 27,
+        2**384 + 231,
+        2**448 + 211,
+        2**512 + 75,
+        2**768 + 183,
+        2**1024 + 643,
+        2**1536 + 75,
+        2**2048 + 981,
+        2**3072 + 813,
+        2**4096 + 1761,
     ]
     for prime in sorted(mersenne_primes + extra_primes):
         if prime > value:

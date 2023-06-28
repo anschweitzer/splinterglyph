@@ -6,6 +6,7 @@
 
 import os
 
+
 word_to_dibyte = None
 dibyte_to_word = None
 
@@ -20,7 +21,7 @@ def load_all_words():
     dibyte_to_word = {}
 
     words_path = os.path.join(os.path.dirname(__file__), "words.txt")
-    with open(words_path, "r") as fp:
+    with open(words_path) as fp:
         dibyte_to_word_list = fp.read().split()
     for i, word in enumerate(dibyte_to_word_list):
         dibyte_to_word[i.to_bytes(2, endian)] = word

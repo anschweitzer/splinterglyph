@@ -1,9 +1,13 @@
-import sys
 import datetime
+import sys
+
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
+
 import splinterglyph.shamir as shamir
-from splinterglyph.readable_hex import bytes_to_words, words_to_bytes
+from splinterglyph.readable_hex import bytes_to_words
+from splinterglyph.readable_hex import words_to_bytes
+
 
 # This should be an integer
 splinterglyph_version = 1
@@ -50,7 +54,7 @@ def unpack_data(b):
         assert chr(b[l - 1]) == "\n"
 
     index = L[0] - 5
-    results["splinterglyph_version"] = int(b[index : index+4])
+    results["splinterglyph_version"] = int(b[index : index + 4])
 
     # Recover number of required shares
     index = L[1] - 6
@@ -146,7 +150,6 @@ def decrypt(
     crypt_path=None,
     key_shares=None,
 ):
-
     with open(crypt_path, "rb") as fp:
         data = unpack_data(bytes(fp.read()))
 

@@ -2,8 +2,10 @@
 
 # Encrypt a file and produce shares of a distributed secret key
 
-import splinterglyph.splinterglyph_tools as splinterglyph
 import argparse
+
+import splinterglyph.splinterglyph_tools as splinterglyph
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -35,6 +37,7 @@ def main():
         required_shares=args.M,
         key_bit_length=args.key_bit_length,
     )
+
 
 if __name__ == "__main__":
     main()

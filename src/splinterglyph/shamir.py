@@ -1,11 +1,12 @@
 # The Shamir secret-sharing code is shamelessly stolen from:
 #    https://github.com/jqueiroz/python-sslib
 
-import splinterglyph.shamir_util as util
-import splinterglyph.shamir_randomness as randomness
-import warnings
 import base64
 import binascii
+import warnings
+
+import splinterglyph.shamir_randomness as randomness
+import splinterglyph.shamir_util as util
 
 
 class Polynomial:
@@ -48,7 +49,7 @@ def lagrange_interpolation(x, points, prime_mod):
         raise ValueError("invalid prime mod")
     if x < 0 or x >= prime_mod:
         raise ValueError("out-of-range value")
-    for (xi, yi) in points:
+    for xi, yi in points:
         if xi < 0 or xi >= prime_mod or yi < 0 or yi >= prime_mod:
             raise ValueError("invalid points")
     y = 0

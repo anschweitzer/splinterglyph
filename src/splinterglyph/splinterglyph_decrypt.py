@@ -3,9 +3,11 @@
 # Given an encrypted file and (enough) shares of a distributed secret key,
 # decrypt the file
 
-import os
-import splinterglyph.splinterglyph_tools as splinterglyph
 import argparse
+import os
+
+import splinterglyph.splinterglyph_tools as splinterglyph
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -27,7 +29,7 @@ def main():
     args = parser.parse_args()
 
     if os.path.exists(args.shares):
-        with open(args.shares, "r") as fp:
+        with open(args.shares) as fp:
             key_shares = fp.read().split()
     else:
         key_shares = (args.shares).split()

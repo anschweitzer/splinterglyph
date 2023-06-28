@@ -1,0 +1,14 @@
+{
+  "_output_dir": "/Users/Andrew/git/spling/hyper",
+  "_template": "gh:cjolowicz/cookiecutter-hypermodern-python",
+  "author": "Bill Bradley",
+  "copyright_year": "2023",
+  "development_status": "Development Status :: 2 - Pre-Alpha",
+  "email": "billbradley@mirabolic.net",
+  "friendly_name": "Splinterglyph",
+  "github_user": "billbradley",
+  "license": "MIT",
+  "package_name": "splinterglyph",
+  "project_name": "splinterglyph",
+  "version": "0.2.0.a1"
+}
