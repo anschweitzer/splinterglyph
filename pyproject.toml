@@ -18,6 +18,8 @@ Changelog = "https://github.com/billbradley/splinterglyph/releases"
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
 pycryptodome = "^3.18.0"
+typer = "^0.9.0"
+rich = "^13.4.2"
 
 [tool.poetry.dev-dependencies]
 Pygments = ">=2.10.0"
@@ -48,6 +50,7 @@ myst-parser = {version = ">=0.16.1"}
 [tool.poetry.scripts]
 splinterglyph_encrypt = "splinterglyph.splinterglyph_encrypt:main"
 splinterglyph_decrypt = "splinterglyph.splinterglyph_decrypt:main"
+spling = "splinterglyph.cli:app"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
