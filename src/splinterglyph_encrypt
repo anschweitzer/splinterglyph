@@ -5,7 +5,7 @@
 import splinterglyph.splinterglyph_tools as splinterglyph
 import argparse
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(
         description="Encrypt file and produce multiple crypto key shares",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
@@ -35,3 +35,6 @@ if __name__ == "__main__":
         required_shares=args.M,
         key_bit_length=args.key_bit_length,
     )
+
+if __name__ == "__main__":
+    main()
